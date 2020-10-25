@@ -54,5 +54,68 @@
 	font-size: 25px;
 }
 
+/*--show-----------------------------------------------*/
+/*戻るボタン位置調整*/
+.back{
+	margin-top: 100px;
+}
 
+/*戻るボタン大きさ調整*/
+.back_btn{
+	width: 800px;
+	margin: 0 auto;
+	font-size: 25px;
+}
+
+/*投稿内容表示位置*/
+.post_show_inner{
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 50px;
+	/*border: 1px solid red;*/
+}
+
+.post_show_inner{
+	content: "";
+	display: block;
+	clear: both;
+}
+.post_show_icon{
+	width: 20%;
+	float: left;
+	/*border: 1px solid red;*/
+}
+.post_show_user_name{
+	width: 70%;
+	float:left;
+	/*border: 1px solid blue;*/
+}
+.post_show_text{
+	width: 70%;
+	float: right;
+	/*border: 1px solid yellow;*/
+}
+
+/*アイコンの大きさ*/
+.post_show_icon img{
+	width: 100px;
+	height: 100px;
+}
+
+
+/*アイコンの位置*/
+.post_show_icon img{
+	padding: 0px 10px;
+	border-radius: 50%;
+}
+
+/*ユーザー名*/
+.post_show_user_name p{
+	font-size: 20px;
+}
+
+/*テキスト位置*/
+.post_show_text p{
+	font-size: 25px;
+}
 

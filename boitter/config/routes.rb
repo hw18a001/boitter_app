@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   #tweet
   #resources :tweets    #自動的割り振りできたが、データベースが反映されなかった
   get 'tweets/index' => 'tweets#index'
+  get 'tweets/:id' => 'tweets#show'
 end

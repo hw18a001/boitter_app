@@ -1,10 +1,26 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-	</head>
-	<body>
-		
-	</body>
-</html>
+<main>
+			<!--戻るボタン-->
+			<div class = "back">
+				<div class = "back_btn">
+					<a href = "#"><i class="fas fa-arrow-left"></i>戻る</a>
+				</div>
+			</div>
+			
+			<!--post.idで対応予定-->
+			<div class = "post_show">
+				<div class = "post_show_inner">
+					<div class = "post_show_icon">	<!--投稿者の画像-->
+						<p><img src = "image/icon.png" alt = "アイコン"></p>
+					</div>
+					<div class = "post_show_user_name">
+						<%= @tweet.id%>
+					</div>
+				
+					<div class = "post_show_text">	<!--投稿者の文章-->
+						<%= @tweet.content%>
+					</div>
+				</div>
+			</div>
+			
+				
+		</main>
