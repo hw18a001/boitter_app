@@ -1,0 +1,58 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+/*--index-----------------------------------------------*/
+.post_inner{
+	content: "";
+	display: block;
+	clear: both;
+}
+.post_icon{
+	width: 20%;
+	float: left;
+	/*border: 1px solid red;*/
+}
+.post_user_name{
+	width: 70%;
+	float:left;
+	/*border: 1px solid blue;*/
+}
+.post_text{
+	width: 70%;
+	float: right;
+	/*border: 1px solid yellow;*/
+}
+
+/*アイコンの大きさ*/
+.post_icon img{
+	width: 100px;
+	height: 100px;
+}
+
+/*枠組み*/
+.post_inner{
+	width: 800px;
+	height: 170px;
+	margin: 0 auto;
+	border: 1px solid #000000;
+}
+
+/*アイコンの位置*/
+.post_icon img{
+	padding: 0px 10px;
+	border-radius: 50%;
+}
+
+/*ユーザー名*/
+.post_user_name p{
+	font-size: 20px;
+}
+
+/*テキスト位置*/
+.post_text p{
+	font-size: 25px;
+}
+
+
+
