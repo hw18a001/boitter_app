@@ -54,6 +54,39 @@
 	font-size: 25px;
 }
 
+
+/*--new_post-----------------------------------------------*/
+/*新規投稿*/
+.new_title{
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.new_title h1{
+	font-size: 50px;
+	text-align: center;
+}
+
+/*新規投稿位置調整*/
+.newpost_inner{
+	width: 700px;
+	margin: 0 auto;
+}
+.newpost_inner textarea{
+	width: 700px;
+	height: 200px;
+	font-size: 20px;
+}
+
+/*送信ボタン*/
+.newpost_submit_btn input{
+	margin-top: 10px;
+	width: 100px;
+	float: right;
+	font-size: 20px;
+}
+
+
+
 /*--show-----------------------------------------------*/
 /*戻るボタン位置調整*/
 .back{
@@ -118,4 +151,6 @@
 .post_show_text p{
 	font-size: 25px;
 }
+
+
 

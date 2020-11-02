@@ -1,7 +1,6 @@
 <main>
 	<div class = "post">
 	<% @tweets.each do |tweet| %>
-		<a href = "#">
 			<div class = "post_inner">
 				<div class = "post_icon">	<!--投稿者の画像-->
 					<p><img src = "image/icon.png" alt = "アイコン"></p>
@@ -11,10 +10,9 @@
 				</div>
 				
 				<div class = "post_text">	<!--投稿者の文章-->
-					<p><%= tweet.content %></p>
+					<p><%= link_to(tweet.content, "/tweets/#{tweet.id}")%></p>
 				</div>
 			</div>
-		</a>
 	<%end%>
 	</div>
 			

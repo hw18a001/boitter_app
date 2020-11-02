@@ -7,4 +7,14 @@ class TweetsController < ApplicationController
   def show
     @tweet = Tweet.find_by(id:params[:id])
   end
+  
+  def new
+  end
+  
+  def create
+    @tweet = Tweet.new(content: params[:content])
+    
+    @tweet.save
+    redirect_to("/tweets/index")
+  end
 end

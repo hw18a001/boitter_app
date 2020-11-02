@@ -1,0 +1,20 @@
+<main>
+	<div class = "new_title">
+		<h1>新規投稿</h1>		<!--インスタのPC画面のタイトルイメージ-->
+	</div>
+							
+	<div class = "newpost">
+		<div class = "newpost_inner">
+			<%=form_tag("/tweets/create") do%>
+				<textarea name = "content"></textarea>
+				
+				<div class = "newpost_submit_btn">
+					<input type="submit" value = "投稿"></input>
+				</div>
+			<%end%>		
+		</div>
+	</div>
+</main>
+
+
+<!--new.html.erbの入力値をindex.html.erbに反映させる-->
