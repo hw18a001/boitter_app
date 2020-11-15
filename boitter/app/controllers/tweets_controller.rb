@@ -18,7 +18,7 @@ class TweetsController < ApplicationController
     if @tweet.save
       redirect_to("/tweets/index")
     else
-      render("tweets/new")s
+      render("tweets/new");
     end
   end
 end
