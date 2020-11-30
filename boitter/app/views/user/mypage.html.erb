@@ -3,7 +3,7 @@
 				
 		<!--アイコンの画像-->
 		<div class = "mypage_icon">
-			<img src = "image/icon.png">
+			<img src="<%= "/user_images/#{@user.image_name}"%>">
 		</div>
 				
 		<!--名前-->
@@ -19,7 +19,7 @@
 </main>
 
 <!--
-ユーザーのアイコン画像を表示
+ユーザーのアイコン画像を表示 ->次はcreateアクションにimage_nameのデフォルト値を持たせる
 ログイン機能追加
 ログアウト機能追加
 -->

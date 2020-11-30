@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_12_072546) do
+ActiveRecord::Schema.define(version: 2020_11_29_091002) do
 
   create_table "tweets", force: :cascade do |t|
     t.text "content"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_11_12_072546) do
     t.string "intro"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image_name"
   end
 
 end
