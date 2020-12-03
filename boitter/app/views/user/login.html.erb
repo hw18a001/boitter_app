@@ -4,17 +4,17 @@
 	</div>
 			
 	<div class = "login_info">
-		<form action = "#" method = "post">
+		<%=form_tag("/user/login_form") do%>
 			<p><label>ユーザー名</label><br>
 				<input type = "text" name = "name" style = "font-size: 25px;"></p>
 	
-			<p><label>メールアドレス</label><br>
-				<input type = "text" name = "email" style = "font-size: 25px;"></p>
+			<p><label>パスワード</label><br>
+				<input type = "text" name = "password" style = "font-size: 25px;"></p>
 				
 			<!--送信ボタン-->
 			<div class = "submit_btn">
 				<button type="submit">ログイン</button>
 			</div>	
-		</form>
+		<%end%>
 	</div>
 </main>

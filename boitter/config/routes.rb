@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   #user
   get 'user/signup' => 'user#signup'  #新規登録
   get 'user/login' => 'user#login'    #ログイン
+  post 'user/login_form' => 'user#login_form'
   get 'user/mypage/:id' => 'user#mypage'  #マイページ
   post 'user/create' => 'user#create'
   
