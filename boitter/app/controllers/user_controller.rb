@@ -12,6 +12,7 @@ class UserController < ApplicationController
           )
       
       if @user  #userが見つかったら
+        session[:user_id] = @user.id
         redirect_to("/tweets/index")
       else
         render("user/login");
@@ -34,5 +35,10 @@ class UserController < ApplicationController
     else
       render("user/signup");
     end
+  end
+  
+  def logout
+      session[:user_id] = nil
+      redirect_to("/")
   end
 end
