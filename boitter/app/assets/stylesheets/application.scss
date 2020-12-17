@@ -26,12 +26,17 @@ a{
 	color: #000000;
 }
 
+body{
+	margin: 0;
+}
+
 /*--header--------------------------------------------*/
 /*header_leftとheader_rightを横に並べる*/
 header{
 	content: "";
 	display: block;
 	clear: both;
+	background-color: #ef857d;
 }
 .header_left{
 	width: 30%;
@@ -51,6 +56,9 @@ header{
 	float: left;
 	margin: 0 50px;
 	font-size: 17px;
+}
+.header_list a{
+	color: #fff;
 }
 
 /*headerに下線を引く*/
