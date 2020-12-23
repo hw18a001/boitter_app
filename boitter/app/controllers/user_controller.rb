@@ -27,6 +27,7 @@ class UserController < ApplicationController
     @user = User.new(
               name: params[:name],
               email: params[:email],
+              password: params[:password],
               image_name: "default.png"
             )
     

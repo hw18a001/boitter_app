@@ -1,17 +1,19 @@
 <main>
 	<div class = "signup_title">
-		<h1>新規登録 or サイトロゴ</h1>		<!--インスタのPC画面のタイトルイメージ-->
+		<h1>新規登録</h1>		<!--インスタのPC画面のタイトルイメージ-->
 	</div>
 	
 	<div class = "signup_info">
 		<%=form_tag("/user/create") do%>
 			<p><label>ユーザー名</label><br>
-				<input type = "text" name = "name" value = <%= "boitter@gmail.com"%> 
-					style = "font-size: 25px;"></p>
+				<input type = "text" name = "name" style = "font-size: 25px;"></p>
 	
 			<p><label>メールアドレス</label><br>
 				<input type = "text" name = "email" style = "font-size: 25px;"></p>
-				
+			
+			<p><label>パスワード</label><br>
+				<input type = "text" name = "password" style = "font-size: 25px;"></p>
+			
 			<!--送信ボタン-->
 			<div class = "submit_btn">
 				<input type="submit" value = "新規登録">
@@ -19,3 +21,4 @@
 		<%end%>
 	</div>
 </main>
+

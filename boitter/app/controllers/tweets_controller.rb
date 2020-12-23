@@ -2,8 +2,6 @@ class TweetsController < ApplicationController
   def index
     @tweets = Tweet.all
     @tweet = Tweet.find_by(id:params[:id])
-    #@user = User.find_by(id: params[:@tweet.user_id])
-    #@tweets = ["hello","こんにちは"]
   end
   
   def show
